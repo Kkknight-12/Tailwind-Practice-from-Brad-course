@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-400 py-2 px-4 rounded-xl font-bold hover:bg-blue-700;
+  }
+}
+
+/* Theme function */
+/* can create custome class like this as well */
+.content-area {
+  @apply bg-green-200;
+  height: theme("spacing.128");
+}
+
+/* media queries */
+@media screen(xl) {
+  body {
+    @apply bg-black text-white;
+  }
+}
