@@ -9,7 +9,7 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
-      color: {
+      colors: {
         strongCyan: "hsl(171,66%,44%)",
         lightBlue: "hsl(233, 100%, 69%)",
         daskGrayishBlue: "hsl(210, 10%, 33%)",

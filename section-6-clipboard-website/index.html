@@ -14,6 +14,45 @@
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
-    <h1 class="text-3xl">Tailwind</h1>
+    <section id="hero">
+      <!--      Hero Section-->
+      <!--      max-w-6xl is 72 rem which is 1152 pixel -->
+      <div class="sectionContainer mb-40 px-10 pt-16">
+        <img src="images/logo.svg" alt="" class="mx-auto my-16" />
+        <h3>a history of everything you copy</h3>
+
+        <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+
+        <!--        Button Container-->
+        <div class="button-container">
+          <a
+            href="#"
+            class="p-4 bg-strongCyan px-8 rounded-full shadow-lg duration-200 hover:opacity-80"
+            >Download for IOS</a
+          ><a
+            href="#"
+            class="p-4 bg-lightBlue px-8 rounded-full shadow-lg duration-200 hover:opacity-80"
+            >Download for Mac</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--  Snippet Section-->
+    <section id="snippets">
+      <div class="sectionContainer my-20 px-10">
+        <h3>Keep track of your snippets</h3>
+      </div>
+      <p
+        class="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-grayishBlue"
+      >
+        Clipboard instantly stores any item copy in the cloud meaning you can
+        access you snippets immediately on all you devices Our Mac and IOS apps
+        will help you organize everything
+      </p>
+    </section>
   </body>
 </html>
