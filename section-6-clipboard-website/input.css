@@ -15,15 +15,42 @@ body {
 }
 
 .sectionContainer{
-    @apply max-w-6xl mx-auto text-center
+    @apply max-w-6xl mx-auto text-center px-10
+}
+
+.section-content {
+    @apply max-w-3xl mx-auto text-xl leading-9 text-center text-grayishBlue
 }
 
 @layer base{
     h3 {
-      @apply  mb-8 text-4xl font-bold text-daskGrayishBlue md:text-5xl
+      @apply  mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+    }
+    h5{
+     @apply   mb-2 text-2xl font-bold text-darkGrayishBlue
     }
 }
 
 .button-container{
     @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4
+}
+/*
+
+https://www.w3schools.com/cssref/css3_pr_filter.asp
+
+filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale()
+    | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
+
+invert(%)	 Inverts the samples in the image.
+sepia(%)	 Converts the image to sepia.
+saturate(%)	 Saturates the image.
+hue-rotate(%) Applies a hue rotation on the image. The value defines the number of degrees
+                around the color circle the image samples will be adjusted. 0deg is default,
+                and represents the original image.
+brightness(%) Adjusts the brightness of the image.
+contrast(%)	  Adjusts the contrast of the image.
+
+*/
+.ficon:hover{
+    filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
 }
